@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <script src="https://kit.fontawesome.com/e8c51057ec.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,400;0,600;1,100&display=swap" rel="stylesheet">
+    <title>Portfólio Davi</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/davi-augusto-vissotto-95b705215/">Linkedin</a>
+            </li>
+            <li>
+                <a target="blank" href="https://github.com/daviaviss">GitHub</a>
+            </li>
+            <li>
+                <a target="blank" href="pdf/DAVI AUGUSTO VISSOTTO.pdf">Currículo</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+
+            <div class="name">
+                <h1>Davi Augusto Vissotto</h1>
+                <h5>Desenvolvedor Web</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none ;" id="about">
+                <p>
+                    Desde criança sou apaixonado por tecnologia. Após terminar meu ensino médio no Colégio de Aplicação
+                    no final de 2020, ingressei na Universidade Federal de Santa Catarina em 2021 e estou cursando o segundo
+                    semestre de Sistema de Informação.
+                    Já atuei em projetos com metodologias ágeis/SCRUM, sou entusiasta na linguagem Python e faço alguns
+                    freelances utilizando WordPress/HTML/CSS. Busco sempre aperfeiçoar minhas habilidades na área e buscar
+                    conhecimento, adoro colaborar e trabalhar em equipe.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="email" placeholder="Seu melhor email :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
